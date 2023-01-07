@@ -94,4 +94,10 @@ button {
     font-size: 2rem;
     border-radius: 15px;
     border: none;
+    transition: background-color 1s ease-out 30ms
+}
+
+button:hover {
+    background-color: red;
+    color: white;
 }
