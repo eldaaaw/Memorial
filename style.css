@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -11,8 +11,9 @@ body {
 }
 
 html {
+    font-family: cairo, poppins, sans-serif;
     font-size: 10px;
-    font-family:  'Poppins', sans-serif;
+  
 }
 
 .background-images {
@@ -23,11 +24,22 @@ html {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    animation-name: slidein;
-    animation-duration: 30s; 
+    animation-name: slideIn;
+    animation-duration: 10s; 
     /* overscroll-behavior:unset; */
     
 }
+
+@keyframes slideIn {
+    from {
+      transform: translateY(100%);
+    }
+  
+    to {
+      transform: translateY(50%);
+    }
+    
+  }
 
 .back {
     opacity: 15%;
@@ -40,20 +52,11 @@ html {
 
 }
 
-@keyframes slidein {
-    from {
-      transform: translateY(100%);
-    }
-  
-    to {
-      transform: translateY(50%);
-    }
-  }
-
 main {
     display: flex;
     justify-content: center;
-    position: relative;
+    position: fixed;
+    left: 700px;
 }
 
 
@@ -70,26 +73,30 @@ main {
 .soon {
     z-index: 5;
     color: rgb(255, 0, 0);
+    font-family: cairo, Arial, Helvetica, sans-serif;
+    font-weight: 400;
     font-size: 3rem;
     letter-spacing: 12px; 
     position: absolute;
-    top: -580px;
+    top: -560px;
     
 }
 
 p {
     z-index: 5;
     color: rgb(255, 255, 255);
+    font-family: cairo, Arial, Helvetica, sans-serif;
+    font-weight: 400;
     font-size: 1.5rem;
     position: absolute;
-    top: -510px;
+    top: -480px;
     width: 70vw;
     text-align: center;
 }
 
 .btn {
     position: relative;
-    top: -300px;
+    top: -310px;
 
 }
 
