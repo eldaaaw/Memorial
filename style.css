@@ -87,7 +87,7 @@ p {
     color: rgb(255, 255, 255);
     font-family: cairo, Arial, Helvetica, sans-serif;
     font-weight: 400;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     position: absolute;
     top: -480px;
     width: 70vw;
@@ -95,8 +95,10 @@ p {
 }
 
 .btn {
+    padding: 20px;
     position: relative;
     top: -310px;
+    
 
 }
 
@@ -108,6 +110,7 @@ button {
     font-size: 2rem;
     border-radius: 15px;
     border: none;
+    cursor: pointer;
     transition: background-color 1s ease-out 30ms
 }
 
@@ -115,3 +118,25 @@ button:hover {
     background-color: red;
     color: white;
 }
+
+footer {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+    width: 100vw;
+    height: 60px;   
+ }
+
+ footer i {
+    color: white;
+    font-size: 30px;
+    padding-left: 10px;
+    cursor: pointer;
+    transition: color 1s ease-out 30ms
+    
+ }
+
+ footer i:hover {
+    color: red;
+ }
